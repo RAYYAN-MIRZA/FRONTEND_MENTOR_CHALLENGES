@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#upperbox {
+    /* border: 2px solid red; */
+    /* background-color: hsl(223, 31%, 20%); */
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem; 
+    color:var(--calc);
+    flex-direction: column;
+    width: 16rem;
+    /* align-items: end; */
+}
+
+/* :root{
+    --bk: hsl(222, 26%, 31%);
+    --res-bar-c: hsl(224, 36%, 15%);
+    --inp-box-c: hsl(224, 36%, 15%);
+    --cylind-back-c: darkblue;
+    --b1-c:red;
+    --b2-c:darkblue;
+    --b3-c:darkblue;
+    --key-pad-c:hsl(224, 36%, 15%);
+    --most-same-key-c:hsl(30, 25%, 89%);
+    --border-most-same-key:2px solid grey;
+    --del-reset-c:hsl(224, 28%, 35%);
+    --res-del-bott:hsl(6, 63%, 50%);
+    --border-bottom: solid 2px hsl(6, 70%, 34%);
+    --key-pad-bg-c:blue;
+    --ball-equal-c: hsl(6, 63%, 50%);
+    --ball-equal-border: hsl(6, 70%, 34%);
+}    */
+
+body{
+    background-color:var(--bk);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultbarbox{
+    /* border: 2px solid gold; */
+    height: 4rem;
+    width: 16rem;
+    margin: 0rem 22rem 0rem 22rem;
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    background-color:var(--res-bar-c);
+    border-radius: 5px;
+}
+.input{
+    margin: 0rem 0rem 0rem 0.4rem;
+    /* border: 2px solid gold; */
+    background-color:var(--inp-box-c);
+    text-align: right;
+    height: 2rem;
+    width: 15rem;
+    font-size: xx-large;
+    color:var(--inp-c);
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+.uppernums{
+    font-size: x-small;
+    text-align: right;
+    margin-right: 0.2rem;
+    gap: 0rem;
+}
+.theme {
+    /* border: 2px solid blue; */
+    display: flex;
+    font-size: smaller;
+    margin: -1.1rem 0rem 1rem 11.5rem;
+    font-size: x-small;
+    /* justify-content: right; */
+}   
+
+.title {
+    /* border: 2px solid blue; */
+    /* text-align: center; */
+    justify-content: right;
+}
+
+.cylinder {
+    display: flex;
+    border-radius: 3rem;
+    align-items: center;
+    /* justify-content: right; */
+    width: 1.6rem;
+    height: 0.6rem;
+    background-color:var(--cylind-back-c);
+    margin: 0.9rem 0rem 0rem 14.4rem;
+    position: absolute;
+    gap: 0.2rem;
+}
+.ball{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0.4rem;
+    width: 0.4rem;
+}
+.ball1{
+    /* background-color: red; */
+    background-color:var(--b1-c);
+    justify-content: left;
+}
+
+.ball2{
+    background-color:var(--b2-c);
+
+    justify-content: center;
+}
+.ball3{
+    background-color:var(--b3-c) ;
+
+    justify-content: right;
+}
+.keypad {
+    background-color:var(--key-pad-c) ;
+    width: 16rem;
+    /* border: 2px solid yellow; */
+    border-radius: 6 rem;
+    margin: 1rem 22rem 0rem 22rem;
+    border-radius: 4px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.neechewala{
+     background-color:var(--key-pad-bg-c);
+}
+.inpdabba1 {
+    /* border: 2px solid black; */
+    display: flex;
+    /* position: relative;     */
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 0.5rem;
+
+}
+/*********************************************************/
+.inpchote1 {
+    cursor: pointer;
+    /* border: 2px solid purple; */
+    height: 2rem;
+    width: 4rem;
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: solid 2px red; */
+}
+
+.inpdabba2 {
+    /* border: 2px solid black; */
+    display: flex;
+    /* position: relative;     */
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 0.5rem;
+
+}
+
+.inpchote2 {
+    cursor: pointer;
+    /* border-bottom: solid 2px red; */
+    border-radius: 0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 4rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.inpdabba3 {
+    display: flex;
+    /* position: relative;     */
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 0.5rem;
+}
+
+.inpchote3 {
+    /* background-color: hsl(30, 25%, 89%); */
+    cursor: pointer;
+    /* border-bottom: solid 2px red; */
+    border-radius: 0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 4rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.inpdabba4 {
+    display: flex;
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 0.5rem;
+}
+
+.inpchote4 {
+    border-radius: 0.2rem;
+    text-align: center;
+    /* background-color: hsl(30, 25%, 89%); */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 4rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+    /* border-bottom: solid 2px red; */
+}
+
+.inpdabba5 {
+    cursor: pointer;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    display: flex;
+    display: flex;
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 0.5rem;
+}
+
+.lambedabbe {
+    width: 14rem;
+    height: 2rem;
+    margin: 0.25rem 0rem 0rem 0rem;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    /* color: white; */
+}
+/* 
+.reset {
+    /* border-bottom: solid 2px hsl(224, 28%, 35%);
+    background-color: hsl(225, 21%, 49%); 
+}
+*/
+
+.equalsign {
+    color:var(--equal-font-c);
+    border-bottom: var(--equal-border);
+    background-color:var(--equal-c);
+    /* background-color: hsl(6, 63%, 50%);
+    border-bottom: solid 2px hsl(6, 70%, 34%);  */
+}
+/*
+.del {
+    background-color: hsl(224, 28%, 35%);
+    color: white;
+}  */
+.for-root{
+    color: var(--same-font);
+    background-color:var(--most-same-key-c);
+    border-bottom:var(--border-most-same-key);
+}
+.less-for-root{
+    color:var(--res-del-font-c);
+    background-color: var(--del-reset-c);
+    border-bottom:var(--res-del-bott); 
+}
+.num{
+    color: var(--most-key-font-c);
+}
+:root[data-theme="theme1"] {
+    --bk: hsl(222, 26%, 31%);
+    --inp-c: white;
+    --res-bar-c: hsl(224, 36%, 15%);
+    --inp-box-c: hsl(224, 36%, 15%);
+    --cylind-back-c: hsl(224, 36%, 15%);
+    --key-pad-c:hsl(224, 36%, 15%);
+    --most-same-key-c:hsl(30, 25%, 89%);
+    --border-most-same-key:2px solid grey;
+    --del-reset-c:hsl(224, 28%, 35%);
+    --res-del-bott:2px solid grey;
+    --res-del-font-c:white;
+    --equal-font-c:white;
+    --border-bottom: solid 2px hsl(6, 70%, 34%);
+     /* --key-pad-bg-c:blue; */
+    --calc:white;
+    --equal-c: hsl(6, 63%, 50%); 
+    --equal-border:2px solid hsl(6, 70%, 34%);
+    --b1-c: hsl(6, 63%, 50%);
+    --b2-c: hsl(224, 36%, 15%);
+    --b3-c: hsl(224, 36%, 15%);  
+}   
+:root[data-theme="theme2"] {
+    --bk: hsl(0, 0%, 90%);
+    --inp-c:hsl(60, 10%, 19%);
+    --res-bar-c:hsl(0, 0%, 93%);
+    --inp-box-c: hsl(0, 0%, 93%);
+    --cylind-back-c:hsl(0, 5%, 81%);
+    --key-pad-c:hsl(0, 5%, 81%);
+    --most-same-key-c:hsl(30, 25%, 89%);
+    --border-most-same-key:2px solid grey;
+    --del-reset-c: hsl(185, 42%, 37%);
+    --res-del-bott:2px solid  hsl(185, 58%, 25%);
+    --res-del-font-c:white;
+    --equal-font-c:white;
+    --border-bottom: solid 2px hsl(6, 70%, 34%);
+     /* --key-pad-bg-c:blue; */
+    --calc: hsl(60, 10%, 19%);
+    --equal-c: hsl(25, 98%, 40%); 
+    --equal-border:2px solid hsl(25, 99%, 27%);
+    --b2-c: hsl(25, 98%, 40%);
+    --b1-c: hsl(0, 5%, 81%);
+    --b3-c: hsl(0, 5%, 81%);  
+}   
+
+:root[data-theme="theme3"] {
+    --bk:hsl(268, 75%, 9%);
+    --inp-c:hsl(52, 100%, 62%);
+    --res-bar-c:hsl(268, 71%, 12%);
+    --inp-box-c: hsl(268, 71%, 12%);
+    --cylind-back-c:hsl(268, 71%, 12%);
+    --key-pad-c:hsl(268, 71%, 12%);
+    --most-key-font-c:hsl(52, 100%, 62%);
+    --same-font:hsl(52, 100%, 62%);
+    --most-same-key-c:hsl(268, 47%, 21%);
+    --border-most-same-key:2px solid hsl(290, 70%, 36%);
+    --del-reset-c:hsl(281, 89%, 26%);
+    --res-del-bott:2px solid hsl(285, 91%, 52%);
+    --res-del-font-c:white;
+    --equal-font-c:black;
+    --border-bottom: solid 2px hsl(6, 70%, 34%);
+     /* --key-pad-bg-c:blue; */
+    --calc: hsl(52, 100%, 62%);
+    --equal-c: hsl(176, 100%, 44%); 
+    --equal-border:2px solid hsl(177, 92%, 70%);
+    --b3-c: hsl(176, 100%, 44%);
+    --b2-c: hsl(268, 71%, 12%);
+    --b1-c: hsl(268, 71%, 12%);  
+}   
+
